@@ -2,7 +2,7 @@ class PlacesController < ApplicationController
 
  def index
   
-  @places = Place.all("place").page(params [:page])
+  @places = Place.search(params[:places], params [:page])
 
  end
 

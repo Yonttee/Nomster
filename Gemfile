@@ -67,9 +67,11 @@ gem 'popper_js', '~> 1.11.1'
 gem 'bootstrap', '4.0.0.alpha6'
 
 
-# Gemfile for pagination
-gem 'will_paginate', '~> 3.0'
+
 # this is needed to add bootstrap style to pagination
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
+
+# Gemfile for pagination
+gem 'will_paginate', '>= 3.1'
