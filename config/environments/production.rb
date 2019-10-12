@@ -1,7 +1,9 @@
 Rails.application.configure do
+config.action_mailer.default_url_options = { host: 'nomster-carriane-linzer.herokuapp.com'}
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
+
   config.cache_classes = true
 
   # Eager load code on boot. This eager loads most of Rails and
@@ -91,4 +93,5 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
 end
