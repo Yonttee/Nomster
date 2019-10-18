@@ -5,25 +5,27 @@
  <p><%= @place.description %></p>
 
  
- 
- 
   
-  <script>
+  
+<script>
     function initMap() {
-      var myLatLng = {lat: <%=@place.latitude %>, lng: <%= @place.longitude %>};
-      var map = new google.maps.Map(document.getElementById('map'), { zoom: 12,
-             center: myLatLng
+      var myLatLng = {lat: -25.363, lng: 131.044};
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: myLatLng
       });
 
       var marker = new google.maps.Marker({
-        position: myLatLng
+        position: myLatLng,
         map: map,
         title: 'Hello World!'
       });
     }
-  </script>
+  
+</script>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH71MUm_53L2TZpREO3v-40pjsfZZjkLg=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB19y0p3J_mSlspPyYHU4IEEnWykAHWAU0&callback=initMap"></script>
  
  <div id="map"></div>
 
