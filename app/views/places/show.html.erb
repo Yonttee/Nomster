@@ -95,6 +95,7 @@
 
 <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
   <%= f.input :caption %>
+  <%= f.input :picture %>
   <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
 <% end %>
  
@@ -104,6 +105,7 @@
   <blockquote>
     <b><%= photo.caption %></b>
     <small><%= photo.user.email %></small>
+    <small><%= photo.picture.user.email %></small>
   </blockquote>
 </div>
 <% end %>
