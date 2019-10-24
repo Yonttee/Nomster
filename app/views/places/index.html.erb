@@ -25,8 +25,8 @@
 <% if place.photos.present? %>
   <div class="col-12">
     <blockquote>
-      <b><%= place.photos.caption %></b>
-      <b><%= image_tag place.photos.picture.last.to_s %></b>
+      <b><%= place.photos.last.caption %></b>
+      <b><%= image_tag place.photos.last.picture.to_s %></b>
     </blockquote>
   </div>
 <% end %>
